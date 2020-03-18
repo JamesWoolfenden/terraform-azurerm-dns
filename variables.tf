@@ -8,3 +8,7 @@ variable "location" {
   description = "Azure Region to use"
   default     = "UK South"
 }
+
+variable "rg_name" {
+  default = "jamesdnstest"
+}

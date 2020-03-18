@@ -43,6 +43,7 @@ This project is 100% Open Source and licensed under the [APACHE2](LICENSE).
 | common\_tags | n/a | `map` | <pre>{<br>  "createdby": "James Woolfenden"<br>}<br></pre> | no |
 | dns\_name | n/a | `string` | `"jamesdnstest.com"` | no |
 | location | Azure Region to use | `string` | `"UK South"` | no |
+| rg\_name | n/a | `string` | `"jamesdnstest"` | no |
 
 ## Outputs
 
