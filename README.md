@@ -34,14 +34,14 @@ This project is 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 | Name | Version |
 |------|---------|
-| azurerm | ~> 2.1 |
+| azurerm | n/a |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:-----:|
 | common\_tags | n/a | `map` | <pre>{<br>  "createdby": "James Woolfenden"<br>}</pre> | no |
-| dns\_name | n/a | `string` | `"jamesdnstest.com"` | no |
+| dns\_name | n/a | `string` | n/a | yes |
 | location | Azure Region to use | `string` | `"UK South"` | no |
 | rg\_name | n/a | `string` | `"jamesdnstest"` | no |
 

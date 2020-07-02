@@ -1,3 +1,4 @@
 module "dns" {
-  source = "../../"
+  source   = "../../"
+  dns_name = "jamesdnstest.com"
 }

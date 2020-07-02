@@ -1,6 +1,5 @@
 variable "dns_name" {
-  type    = string
-  default = "jamesdnstest.com"
+  type = string
 }
 
 variable "location" {
@@ -11,4 +10,10 @@ variable "location" {
 
 variable "rg_name" {
   default = "jamesdnstest"
+}
+
+variable "common_tags" {
+  default = {
+    createdby = "James Woolfenden"
+  }
 }
