@@ -9,7 +9,7 @@ DNS in Azure, a WIP.
 
 ```terraform
 module "statebucket" {
-  source                   = "JamesWoolfenden/dns/azure"
+  source                   = "JamesWoolfenden/dns/azurerm"
   version                  = "0.2.0"
   common_tags              = var.common_tags
 }
@@ -28,10 +28,6 @@ common_tags = {
 This project is 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-## Requirements
-
-No requirements.
-
 ## Providers
 
 | Name | Version |
@@ -41,7 +37,7 @@ No requirements.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+|------|-------------|------|---------|:-----:|
 | common\_tags | n/a | `map` | <pre>{<br>  "createdby": "James Woolfenden"<br>}</pre> | no |
 | dns\_name | n/a | `string` | n/a | yes |
 | location | Azure Region to use | `string` | `"UK South"` | no |
