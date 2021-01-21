@@ -2,8 +2,12 @@
 
 [![Build Status](https://github.com/JamesWoolfenden/terraform-azurerm-dns/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-azurerm-dns)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-azurerm-dns.svg)](https://github.com/JamesWoolfenden/terraform-azurerm-dns/releases/latest)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-azurerm-dns.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-azurerm-dns/releases/latest)
+![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
+[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-azurerm-dns/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-azurerm-dns&benchmark=CIS+AWS+V1.2)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
+[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-azurerm-dns/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-azurerm-dns&benchmark=INFRASTRUCTURE+SECURITY)
 
 DNS in Azure, a WIP.
 
@@ -28,6 +32,10 @@ common_tags = {
 This project is 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
 ## Providers
 
 | Name | Version |
@@ -37,7 +45,7 @@ This project is 100% Open Source and licensed under the [APACHE2](LICENSE).
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
+|------|-------------|------|---------|:--------:|
 | common\_tags | n/a | `map` | <pre>{<br>  "createdby": "James Woolfenden"<br>}</pre> | no |
 | dns\_name | n/a | `string` | n/a | yes |
 | location | Azure Region to use | `string` | `"UK South"` | no |
@@ -71,7 +79,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-azur
 
 ## Copyrights
 
-Copyright © 2019-2020 James Woolfenden
+Copyright © 2019-2021 James Woolfenden
 
 ## License
 
