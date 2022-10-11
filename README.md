@@ -77,9 +77,9 @@ The Terraform resource required is:
 
 ```golang
 
-resource "azurerm_role_definition" "terraform_pikeqfomumtt" {
+resource "azurerm_role_definition" "terraform_pikeihtlalgt" {
   role_definition_id = local.uuid
-  name               = "terraform_pikeqfomumtt"
+  name               = "terraform_pikeihtlalgt"
   scope              = data.azurerm_subscription.primary.id
 
   permissions {
