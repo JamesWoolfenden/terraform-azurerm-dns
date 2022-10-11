@@ -68,6 +68,45 @@ No modules.
 No outputs.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
+## Policy
+
+This is the policy required to build this project:
+
+<!-- BEGINNING OF PRE-COMMIT-PIKE DOCS HOOK -->
+The Terraform resource required is:
+
+```golang
+
+resource "azurerm_role_definition" "terraform_pikeqfomumtt" {
+  role_definition_id = local.uuid
+  name               = "terraform_pikeqfomumtt"
+  scope              = data.azurerm_subscription.primary.id
+
+  permissions {
+    actions = [
+    "Microsoft.Resources/subscriptions/providers/read",
+    "Microsoft.Resources/subscriptions/resourcegroups/delete",
+    "Microsoft.Resources/subscriptions/resourcegroups/read",
+    "Microsoft.Resources/subscriptions/resourcegroups/write"]
+    not_actions = []
+  }
+
+  assignable_scopes = [
+    data.azurerm_subscription.primary.id,
+  ]
+}
+
+locals {
+  uuid = uuid()
+}
+
+data "azurerm_subscription" "primary" {
+}
+
+
+```
+<!-- END OF PRE-COMMIT-PIKE DOCS HOOK -->
+
 ## Related Projects
 
 Check out these related projects.
@@ -90,7 +129,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-azur
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright © 2019-2022 James Woolfenden
 
 ## License
 
@@ -121,11 +160,3 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-[github]: https://github.com/jameswoolfenden
-[linkedin]: https://www.linkedin.com/in/jameswoolfenden/
-[twitter]: https://twitter.com/JimWoolfenden
-[share_twitter]: https://twitter.com/intent/tweet/?text=terraform-azurerm-dns&url=https://github.com/JamesWoolfenden/terraform-azurerm-dns
-[share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-azurerm-dns&url=https://github.com/JamesWoolfenden/terraform-azurerm-dns
-[share_reddit]: https://reddit.com/submit/?url=https://github.com/JamesWoolfenden/terraform-azurerm-dns
-[share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/JamesWoolfenden/terraform-azurerm-dns
-[share_email]: mailto:?subject=terraform-azurerm-dns&body=https://github.com/JamesWoolfenden/terraform-azurerm-dns
