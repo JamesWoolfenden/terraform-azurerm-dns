@@ -12,7 +12,7 @@
 DNS in Azure, a WIP.
 
 ```terraform
-module "statebucket" {
+module "dns" {
   source                   = "JamesWoolfenden/dns/azurerm"
   version                  = "0.2.0"
   common_tags              = var.common_tags
