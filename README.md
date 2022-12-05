@@ -12,7 +12,7 @@
 DNS in Azure, a WIP.
 
 ```terraform
-module "statebucket" {
+module "dns" {
   source                   = "JamesWoolfenden/dns/azurerm"
   version                  = "0.2.0"
   common_tags              = var.common_tags
@@ -84,6 +84,14 @@ resource "azurerm_role_definition" "terraform_pike" {
 
   permissions {
     actions = [
+    "Microsoft.Network/dnsZones/SOA/read",
+    "Microsoft.Network/dnsZones/delete",
+    "Microsoft.Network/dnsZones/read",
+    "Microsoft.Network/dnsZones/write",
+    "Microsoft.Network/privateDnsZones/SOA/read",
+    "Microsoft.Network/privateDnsZones/delete",
+    "Microsoft.Network/privateDnsZones/read",
+    "Microsoft.Network/privateDnsZones/write",
     "Microsoft.Resources/subscriptions/providers/read",
     "Microsoft.Resources/subscriptions/resourcegroups/delete",
     "Microsoft.Resources/subscriptions/resourcegroups/read",
