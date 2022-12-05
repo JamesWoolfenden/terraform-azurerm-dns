@@ -14,7 +14,7 @@ DNS in Azure, a WIP.
 ```terraform
 module "dns" {
   source                   = "JamesWoolfenden/dns/azurerm"
-  version                  = "0.2.0"
+  version                  = "0.0.38"
   common_tags              = var.common_tags
 }
 ```
